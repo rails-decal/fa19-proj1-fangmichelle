@@ -1,6 +1,8 @@
 # Q0: Why are these two errors being thrown?
+# The pending migrations error is because we didn't run db:migrate yet. The controller error is because we haven't created a Pokemon model yet.
 
 # Q1: How are the random Pokemon appearing? What is the common factor between all the possible Pokemon that appear? *
+# The only Pokemon that can appear are the ones in the seed file. They are also the only starter Pokemon.
 
 # Question 2a: What does the following line do "<%= button_to "Throw a Pokeball!", capture_path(id: @pokemon), :class => "button medium", :method => :patch %>"? Be specific about what "capture_path(id: @pokemon)" is doing. If you're having trouble, look at the Help section in the README.
 
